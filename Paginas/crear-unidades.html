@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Unidades Temáticas y Subtemas</title>
+    <link rel="stylesheet" href="crear-unidades.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crear Unidades Temáticas y Subtemas</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="unidades-container">
+            <h2>Crear Nueva Unidad Temática</h2>
+            <form id="unidadForm">
+                <label for="unidadNombre">Nombre de la Unidad Temática:</label>
+                <input type="text" id="unidadNombre" name="unidadNombre" required>
+                
+                <label for="unidadDescripcion">Descripción de la Unidad Temática:</label>
+                <textarea id="unidadDescripcion" name="unidadDescripcion" required></textarea>
+                
+                <h3>Agregar Subtemas</h3>
+                <div id="subtemasContainer">
+                    <!-- Aquí se añadirán dinámicamente los campos para subtemas -->
+                </div>
+                <button type="button" onclick="agregarSubtema()">Agregar Subtema</button>
+                
+                <button type="submit">Crear Unidad Temática y Subtemas</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="crear-unidades.js"></script>
+</body>
+</html>
+

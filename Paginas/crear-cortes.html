@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Cortes de Períodos Previos</title>
+    <link rel="stylesheet" href="crear-cortes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crear Cortes de Períodos Previos</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="cortes-container">
+            <h2>Crear Nuevo Corte de Período Previo</h2>
+            <form id="corteForm">
+                <label for="fechaInicio">Fecha de Inicio:</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" required>
+                
+                <label for="fechaFin">Fecha de Fin:</label>
+                <input type="date" id="fechaFin" name="fechaFin" required>
+                
+                <button type="submit">Crear Corte de Período Previo</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="crear-cortes.js"></script>
+</body>
+</html>

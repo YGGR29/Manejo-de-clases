@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Resultados de Aprendizaje</title>
+    <link rel="stylesheet" href="crear-resultados-aprendizaje.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crear Resultados de Aprendizaje</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="resultados-container">
+            <h2>Crear Nuevo Resultado de Aprendizaje</h2>
+            <form id="resultadoForm">
+                <label for="resultadoId">ID del Resultado:</label>
+                <input type="text" id="resultadoId" name="resultadoId" required>
+                
+                <label for="resultadoDescripcion">Descripción del Resultado:</label>
+                <textarea id="resultadoDescripcion" name="resultadoDescripcion" required></textarea>
+                
+                <label for="competenciaId">Competencia Relacionada:</label>
+                <select id="competenciaId" name="competenciaId" required>
+                    <option value="">Seleccione una competencia</option>
+                    <!-- Opciones serán añadidas dinámicamente -->
+                </select>
+                
+                <button type="submit">Crear Resultado de Aprendizaje</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="crear-resultados-aprendizaje.js"></script>
+</body>
+</html>
+

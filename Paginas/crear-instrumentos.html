@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Instrumento de Evaluación</title>
+    <link rel="stylesheet" href="crear-instrumentos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crear Instrumento de Evaluación</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="instrumento-container">
+            <h2>Crear Nuevo Instrumento de Evaluación</h2>
+            <form id="instrumentoForm">
+                <label for="instrumentoId">ID del Instrumento:</label>
+                <input type="text" id="instrumentoId" name="instrumentoId" required>
+                
+                <label for="instrumentoNombre">Nombre del Instrumento:</label>
+                <input type="text" id="instrumentoNombre" name="instrumentoNombre" required>
+                
+                <label for="instrumentoDescripcion">Descripción del Instrumento:</label>
+                <textarea id="instrumentoDescripcion" name="instrumentoDescripcion" required></textarea>
+                
+                <button type="submit">Crear Instrumento de Evaluación</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="crear-instrumentos.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Semestre</title>
+    <link rel="stylesheet" href="finalizar-semestre.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Finalizar Semestre</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="finalizar-container">
+            <h2>Confirmar Finalización del Semestre</h2>
+            <form id="finalizarForm">
+                <label for="fechaInicio">Fecha de Inicio del Semestre:</label>
+                <input type="date" id="fechaInicio" name="fechaInicio" required>
+                
+                <label for="fechaFin">Fecha de Fin del Semestre:</label>
+                <input type="date" id="fechaFin" name="fechaFin" required>
+                
+                <label for="archivoRespaldo">Subir Archivo de Respaldo:</label>
+                <input type="file" id="archivoRespaldo" name="archivoRespaldo" accept=".zip,.rar" required>
+                
+                <button type="submit">Finalizar Semestre</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="finalizar-semestre.js"></script>
+</body>
+</html>

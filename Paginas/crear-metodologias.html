@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Metodología de Realimentación</title>
+    <link rel="stylesheet" href="crear-metodologias.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crear Metodología de Realimentación</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="metodologia-container">
+            <h2>Crear Nueva Metodología de Realimentación</h2>
+            <form id="metodologiaForm">
+                <label for="metodologiaId">ID de la Metodología:</label>
+                <input type="text" id="metodologiaId" name="metodologiaId" required>
+                
+                <label for="metodologiaNombre">Nombre de la Metodología:</label>
+                <input type="text" id="metodologiaNombre" name="metodologiaNombre" required>
+                
+                <label for="metodologiaDescripcion">Descripción de la Metodología:</label>
+                <textarea id="metodologiaDescripcion" name="metodologiaDescripcion" required></textarea>
+                
+                <button type="submit">Crear Metodología de Realimentación</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="crear-metodologias.js"></script>
+</body>
+</html>
+
+</html>

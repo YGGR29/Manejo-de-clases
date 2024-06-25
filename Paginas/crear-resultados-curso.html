@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Resultados de Aprendizaje del Curso</title>
+    <link rel="stylesheet" href="crear-resultados-curso.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crear Resultados de Aprendizaje del Curso</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="resultados-curso-container">
+            <h2>Crear Nuevo Resultado de Aprendizaje del Curso</h2>
+            <form id="resultadoCursoForm">
+                <label for="resultadoCursoId">ID del Resultado:</label>
+                <input type="text" id="resultadoCursoId" name="resultadoCursoId" required>
+                
+                <label for="resultadoCursoDescripcion">Descripción del Resultado:</label>
+                <textarea id="resultadoCursoDescripcion" name="resultadoCursoDescripcion" required></textarea>
+                
+                <label for="competenciaId">Competencia Relacionada:</label>
+                <select id="competenciaId" name="competenciaId" required>
+                    <option value="">Seleccione una competencia</option>
+                    <!-- Opciones serán añadidas dinámicamente -->
+                </select>
+                
+                <label for="materiaId">Materia Relacionada:</label>
+                <select id="materiaId" name="materiaId" required>
+                    <option value="">Seleccione una materia</option>
+                    <!-- Opciones serán añadidas dinámicamente -->
+                </select>
+                
+                <button type="submit">Crear Resultado de Aprendizaje del Curso</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="crear-resultados-curso.js"></script>
+</body>
+</html>
+

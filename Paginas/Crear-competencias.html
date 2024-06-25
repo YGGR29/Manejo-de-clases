@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Competencias</title>
+    <link rel="stylesheet" href="Crear-competencias.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Crear Competencias</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="competencias-container">
+            <h2>Crear Nueva Competencia</h2>
+            <form id="competenciaForm">
+                <label for="competenciaId">ID de la Competencia:</label>
+                <input type="text" id="competenciaId" name="competenciaId" required>
+                
+                <label for="competenciaNombre">Nombre de la Competencia:</label>
+                <input type="text" id="competenciaNombre" name="competenciaNombre" required>
+                
+                <label for="competenciaDescripcion">Descripción de la Competencia:</label>
+                <textarea id="competenciaDescripcion" name="competenciaDescripcion" required></textarea>
+                
+                <button type="submit">Crear Competencia</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="Crear-competencias.js"></script>
+</body>
+</html>

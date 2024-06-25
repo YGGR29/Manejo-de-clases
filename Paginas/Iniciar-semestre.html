@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Semestre</title>
+    <link rel="stylesheet" href="Iniciar-semestre.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Iniciar Semestre</h1>
+        </nav>
+    </header>
+    <main>
+        <div class="semester-container">
+            <h2>Crear Nuevo Semestre</h2>
+            <form id="semesterForm">
+                <label for="startDate">Fecha de Inicio:</label>
+                <input type="date" id="startDate" name="startDate" required>
+                
+                <label for="endDate">Fecha de Finalización:</label>
+                <input type="date" id="endDate" name="endDate" required>
+                
+                <label for="teachersFile">Archivo de Docentes:</label>
+                <input type="file" id="teachersFile" name="teachersFile" accept=".csv" required>
+                
+                <label for="groupsFile">Archivo de Grupos:</label>
+                <input type="file" id="groupsFile" name="groupsFile" accept=".csv" required>
+                
+                <button type="submit">Crear Semestre</button>
+                <p id="errorMessage" class="error-message"></p>
+                <p id="successMessage" class="success-message"></p>
+            </form>
+            <a href="menu.html" class="back-button">Volver al Menú</a>
+        </div>
+    </main>
+    <script src="Iniciar-semestre.js"></script>
+</body>
+</html>
+
